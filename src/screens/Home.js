@@ -31,7 +31,7 @@ export default function Home({navigation}) {
             maxHeight: 50,
             resizeMode: 'contain',
           }}
-          source={require('../assets/plant.png')}
+          source={images.logo}
         />
         <Text style={styles.title1}>
           {/* Home Is Where{'\n'}My Plants {'\n'}Are */}
@@ -43,7 +43,8 @@ export default function Home({navigation}) {
         style={styles.overlay}>
         <View style={styles.rowNorm}>
           <TouchableOpacity
-            onPress={() => navigation.navigate('PlanBuilderUpload')}
+            // onPress={() => navigation.navigate('PlanBuilderUpload')}
+            onPress={() => navigation.navigate('test')}
             style={styles.slide1}>
             <View style={styles.centerFlex}>
               <Icon name="leaf" size={30} color={COLORS.white} />

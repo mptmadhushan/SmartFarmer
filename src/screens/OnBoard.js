@@ -11,6 +11,7 @@ import {
 import {icons, images, SIZES, COLORS, FONTS} from '../helpers';
 import LinearGradient from 'react-native-linear-gradient';
 export default function OnBoard({navigation}) {
+  console.log(':hap');
   return (
     <ImageBackground
       style={styles.container}
@@ -25,17 +26,18 @@ export default function OnBoard({navigation}) {
             marginTop: SIZES.height * 0.2,
             resizeMode: 'contain',
           }}
-          source={require('../assets/plant.png')}
+          source={images}
         />
-        <Text style={styles.title2}>Take care of your</Text>
+        {/* <Text style={styles.title2}>Take care of your</Text>
         <Text style={styles.title}>"greens"</Text>
         <TouchableOpacity
+        TODO:JHJHJ NHJHJ MNMM
           onPress={() => {
             navigation.navigate('Home');
           }}
           style={styles.btn}>
           <Text style={styles.btnText}>Get started</Text>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
       </LinearGradient>
     </ImageBackground>
   );
